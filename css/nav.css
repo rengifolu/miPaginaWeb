@@ -1,0 +1,69 @@
+/* ESTILOS GENERALES */
+header > nav{
+    background: #528fd5;
+    overflow: hidden;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+nav li {
+    line-height: 3rem;
+    position: relative;
+}
+
+nav li ul {
+    position: absolute;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 2.5em;
+    display: block;  /* Si no lo aplicamos entonces paddin solo aplica 20 a los lados en cambio poniendolo tambien aplica 0 arriba y abajo */
+    transition: .4s;
+}
+
+nav a:hover {
+    background: #75ACEC;
+}
+
+nav li ul {
+    display: none; 
+}
+
+nav li:hover > ul {
+    display: block;
+}
+
+/* PRIMER NIVEL */
+
+nav > ul {
+    /* background: #528fd5; */
+    display: block;
+    width: 100%;
+}
+
+nav > ul > li {
+    float: left;   /* para que lis se apilen a la izq */
+}
+
+/* SEGUNDO NIVEL */
+
+nav li li {
+    background: #528fd5;
+    width: 200px;
+}
+
+nav > ul > li > ul {
+    top: 100%;
+}
+
+/* TERCER NIVEL */
+
+nav ul ul ul {
+    left: 100%;
+    top: 0;
+}

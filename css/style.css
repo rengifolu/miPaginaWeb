@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #e6e6e6;
+    background-image: url("../img/amsterdam.jpg");
+}
+
+header, main , footer{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;  /* 20 px añade 20 arriba y abajo de cada elemento*/
+}
+
+/* header nav{
+    background: #528fd5;
+    overflow: hidden;
+    color: #fff;
+}
+
+header nav ul{
+    list-style: none; 
+}
+
+header nav ul li{
+    float: left;
+}
+
+header nav ul li a{
+    padding: 10px 20px; 
+    display: block;  
+    color: #fff;
+    text-decoration: none; 
+}
+
+
+header nav ul li a:hover{
+    background: #75ACEC;
+} */
+
+.articles{
+    width: 68.5%;
+    float: left;
+    background: #fff;
+    margin-right: 1.5%;
+}
+
+main article{
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+ol{
+    list-style-type:square;
+}
+
+aside{
+    width: 30%;
+    background: #ff8000;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+footer{
+    background: rgb(76, 66, 219);
+    opacity: 0.5;
+    color: #fff;
+    clear: both;  /*limpia los float sgts*/
+    padding: 10px 0px;
+    text-align: center;
+    height: 200px;
+}
+
+.acercaDe{
+    clear: both;  /*limpia los float sgts*/
+    height: 400px;
+}
+
+.servicios{
+    clear: both;  /*limpia los float sgts*/
+    height: 50%;
+}
+
+.backtrack{
+    clear: both;  /*limpia los float sgts*/
+    height: 50%;
+}
+
+.contacto{
+    clear: both;  /*limpia los float sgts*/
+    height: 50%;
+}
