@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
         <title>Diego Lujan</title>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" type="text/css" href="css/nav.css" />
+        <link rel="stylesheet" type="text/css" href="css/parallax.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/javascript" src="js/index.js"></script>
         <meta charset="UTF-8">
 </head>
-<body>
-
+<body  >
+    <nav>
+        <ul>
+            <li><a href="#inicio">Home</a></li>
+            <li><a href="#actualidad">Present</a></li>
+            <li><a href="#estudios">Education</a>
+                <ul>
+                  <li><a href="#">Java</a></li>
+                  <li><a href="#">C++</a></li>
+                  <li><a href="#">Javascript</a>
+                      <ul>
+                          <li><a href="#">Vue</a></li>
+                          <li><a href="#">React Native</a></li>
+                      </ul>
+                  </li>
+                </ul>
+            </li>
+            <li><a href="#backtrack">Backtrack</a></li>
+            <li><a href="#contacto">Contact</a>
+        </ul>
+    </nav>
 
     <header>
 
-      <div class="logotipo">
-          <img src="img/lujan-diego.jpg" alt="image logo" width="100">
-      </div>
-      <nav>
-          <ul>
-              <li><a href="#inicio">Inicio</a></li>
-              <li><a href="#Acerca de">Acerca de</a></li>
-              <li><a href="#servicios">Servicios</a>
-                  <ul>
-                    <li><a href="#">Java</a></li>
-                    <li><a href="#">C++</a></li>
-                    <li><a href="#">Javascript</a>
-                        <ul>
-                            <li><a href="#">Vue</a></li>
-                            <li><a href="#">React Native</a></li>
-                        </ul>
-                    </li>
-                  </ul>
-              </li>
-              <li><a href="#Backtrack">Backtrack</a></li>
-              <li><a href="#Contacto">Contacto</a>
-          </ul>
-      </nav>
     </header>
 
     
 
-    <main  class="main">
-        <section class="articles">
-           <article>
-               <h2>INGENIERIA DE SOFTWARE</h2>
-               <p>Los ingenieros de software de ordenador se encargan de analizar, diseñar, crear y probar los sistemas informáticos y de software. Además, escriben programas de software para satisfacer las necesidades de un cliente o para resolver un problema particular.</p>
-           </article>
-           <article>
-                <h2>FORMACIÓN</h2>
-                <h3>GRADO EN INGENIERÍA INFORMÁTICA</h3>
-                <p> Los estudios de Ingeniería Informática están dirigidos a:<p></a:p>
-                    <ol>
-                        <li>Los profesionales que quieran adquirir las competencias y conocimientos necesarios para desarrollar software y aplicaciones, gestionar bases de datos o dirigir proyectos informáticos.</li>
-                        <li>Las personas interesadas en todo lo referente a la programación avanzada en orientación a objetos, gestión de redes, gestión de proyectos, sistemas informáticos, etc.</li>
-                    </ol>
-            </article>
+    <main  class="main">   
+        <section class="primero">
+        <a name="inicio"></a>
+        <div class="titulo" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" id="titulo">
+            <h1 >Diego Lujan</h1>
+            <h2>Software Engineer</h2>
+            <br>
+            <a href="https://github.com/rengifolu"><i class="fa fa-github-square" style="font-size:48px;color:red"></i></a>     
+            <a href="https://www.linkedin.com/in/diego-luj%C3%A1n-632601134/"><i class="fa fa-linkedin-square" style="font-size:48px;color:red"></i></a>
+            <a href="https://twitter.com/diego13753276"><i class="fa fa-twitter" style="font-size:48px;color:red"></i></a>
+        </div>
+        <div class="imagen">
+            <img src="img/lujan-diego.jpg" alt="Imagen perfil diego">
         </section>
-            
-        <aside>
-           <h3>Este es mi sidebar</h3>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia esse necessitatibus ullam ut, vero odio eligendi doloribus autem deleniti cum architecto quaerat distinctio praesentium voluptatibus! Fugiat doloribus sunt quis amet!</p>
-        </aside>
+        <section class="parallax">
+            <a name="actualidad"></a>
+            <h1>Present</h1>
+        </section>
+        <section class="estudios">
+            <a name="estudios"></a>
+            <h1>Computer Science</h1>
+            <br>
+            <ul>
+                <li>C++</li>
+                <li>QT</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Vue.js</li>
+                <li>Linux</li>
+            </ul>
+        </section>
 
-        <section class="acercaDe">
-            <a name="Acerca de"></a>
-            <li><h1>Acerca de</h1></li>
-        </section>
         <section class="servicios">
-            <a name="Servicios"></a>
-            <li><h1>Servicios</h1></li>
+            <a name="servicios"></a>
+            <h1>Servicios</h1>
         </section>
-        <section class="backtrack">
-            <a name="Backtrack"></a>
-            <li><h1>Backtrack</h1></li>
-        </section>
-        <section class="contacto">
-            <a name="Contacto"></a>
-            <li><h1>Contacto</h1></li>
+        <section class="parallax">
+            <a name="backtrack"></a>
+            <h1>Backtrack</h1>
         </section>
     </main>
 
-    
-
+    <!-- FOOTER -->
+    <a name="contacto"></a>
     <footer><a href="https://github.com/rengifolu">Diego Lujan</a></footer>
 
 

@@ -1,6 +1,9 @@
-function myFunction() {
-    var str = "Visit W3Schools";
-    var patt1 = /w3schools/i;
-    var result = str.match(patt1);
-    document.getElementById("demo").innerHTML = result;
-}
+// para agrandar div de primer apartado
+// function bigImg(x) {
+//     document.getElementById("titulo").style.fontSize = "2em";
+//     document.getElementById("titulo").style.animationDelay = "2s";
+// }
+
+// function normalImg(x) {
+//     document.getElementById("titulo").style.ontSize = "0.5em";
+// }

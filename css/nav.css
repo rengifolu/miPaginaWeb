@@ -1,7 +1,9 @@
-/* ESTILOS GENERALES */
-header > nav{
+nav{
+    width: 100%;
     background: #528fd5;
     overflow: hidden;
+    position: fixed;
+    opacity: .5;
 }
 nav ul {
     list-style: none;
@@ -10,7 +12,7 @@ nav ul {
 }
 
 nav li {
-    line-height: 3rem;
+    line-height: 4rem;
     position: relative;
 }
 
@@ -20,7 +22,7 @@ nav li ul {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    /* color: #fff; */
     padding: 0 2.5em;
     display: block;  /* Si no lo aplicamos entonces paddin solo aplica 20 a los lados en cambio poniendolo tambien aplica 0 arriba y abajo */
     transition: .4s;

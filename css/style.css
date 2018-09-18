@@ -4,94 +4,116 @@
 }
 
 body {
-    background: #e6e6e6;
-    background-image: url("../img/amsterdam.jpg");
-}
-
-header, main , footer{
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;  /* 20 px añade 20 arriba y abajo de cada elemento*/
-}
-
-/* header nav{
-    background: #528fd5;
-    overflow: hidden;
+    /* background-image: url("../img/amsterdam.jpg"); */
     color: #fff;
+    text-align: center;
 }
 
-header nav ul{
-    list-style: none; 
+header,footer{
+    width: 100%;
 }
 
-header nav ul li{
+
+
+
+/* APARTADO PRIMER DIV */
+.primero{
+    /* list-style-type: none; */
+    width: 100%;
+    height: 1000px;
+    background-color: #242325;
+}
+
+.titulo{
+    width: 50%;
     float: left;
+    color: #5c2e8a;
+    padding-top: 350px;
 }
 
-header nav ul li a{
-    padding: 10px 20px; 
-    display: block;  
-    color: #fff;
-    text-decoration: none; 
+.titulo > h1{
+    font-size: 5em;
+}
+.titulo > h2{
+    font-size: 3em;
+}
+
+.imagen{
+    padding-top: 300px;
+    width: 40%;
+    height: 40%;;
+    float: left;
+    -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 4s;
+}
+
+.imagen:hover {
+    width: 50%;
+    height: 50%;
+}
+
+.imagen > img {
+    width: 50%;
+    opacity: 0.5;
+    border-radius: 8px;
 }
 
 
-header nav ul li a:hover{
-    background: #75ACEC;
+/* APARTADO ESTUDIOS */
+.estudios{
+    background-image: url("../img/estudios.jpg");
+    list-style-type: none; 
+    width: 100%;
+    height: 1000px;
+    background-size: contain;
+}
+
+.estudios > h1{
+    padding-top: 250px;
+    font-size: 5em;
+}
+
+.estudios > ul > li {
+    font-size: 3em;
+}
+
+/* ACTUALIDAD */
+.actualidad{
+    background-image: url("../img/colonia.jpg");
+    background-size: cover; /* Resize the background image to cover the entire container */;
+    list-style-type: none; 
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(146, 146, 43);
+}
+
+.actualidad > h1{
+    padding-top: 300px;
+    font-size: 5em;
+}
+
+/* SERVICIOS */
+.servicios{
+    background-image: url("../img/chorrillos.jpg");
+    background-size: cover; /* Resize the background image to cover the entire container */;
+    list-style-type: none; 
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(80, 123, 187);
+}
+/* BACKTRACK
+.backtrack{
+    list-style-type: none; 
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(146, 146, 43);
 } */
 
-.articles{
-    width: 68.5%;
-    float: left;
-    background: #fff;
-    margin-right: 1.5%;
-}
-
-main article{
-    padding: 20px;
-    background: #fff;
-    margin-bottom: 20px;
-}
-
-ol{
-    list-style-type:square;
-}
-
-aside{
-    width: 30%;
-    background: #ff8000;
-    float: left;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-
 footer{
-    background: rgb(76, 66, 219);
+    background: #33CB5A;
     opacity: 0.5;
-    color: #fff;
     clear: both;  /*limpia los float sgts*/
     padding: 10px 0px;
-    text-align: center;
     height: 200px;
-}
-
-.acercaDe{
-    clear: both;  /*limpia los float sgts*/
-    height: 400px;
-}
-
-.servicios{
-    clear: both;  /*limpia los float sgts*/
-    height: 50%;
-}
-
-.backtrack{
-    clear: both;  /*limpia los float sgts*/
-    height: 50%;
-}
-
-.contacto{
-    clear: both;  /*limpia los float sgts*/
-    height: 50%;
+    font-size: 5em;
 }
