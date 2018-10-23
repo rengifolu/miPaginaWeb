@@ -7,6 +7,8 @@ body {
     /* background-image: url("../img/amsterdam.jpg"); */
     color: #fff;
     text-align: center;
+    background-color: rgb(22, 21, 21);
+
 }
 
 header,footer{
@@ -21,7 +23,8 @@ header,footer{
     /* list-style-type: none; */
     width: 100%;
     height: 1000px;
-    background-color: #242325;
+   
+    background-color: rgb(22, 21, 21);
 }
 
 .titulo{
@@ -33,29 +36,36 @@ header,footer{
 
 .titulo > h1{
     font-size: 5em;
+    /* font-size: 100px; */
 }
 .titulo > h2{
     font-size: 3em;
+    /* font-size: 70px; */
+
 }
 
 .imagen{
+    
     padding-top: 300px;
     width: 40%;
     height: 40%;;
     float: left;
     -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
     transition: width 2s, height 4s;
+    
 }
-
-.imagen:hover {
+/* SUSTITUIDO CON JAVASCRIPT */
+/* .imagen:hover {
     width: 50%;
     height: 50%;
-}
+} */
 
 .imagen > img {
+    transform: rotate(-10deg) skew(-10deg);  /* GIRA IMAGEN */
     width: 50%;
     opacity: 0.5;
     border-radius: 8px;
+    box-shadow: -15px -15px 45px 5px rgb(31, 240, 48);
 }
 
 
@@ -101,19 +111,48 @@ header,footer{
     height: 1000px;
     background-color: rgb(80, 123, 187);
 }
-/* BACKTRACK
-.backtrack{
-    list-style-type: none; 
-    width: 100%;
-    height: 1000px;
-    background-color: rgb(146, 146, 43);
-} */
 
-footer{
-    background: #33CB5A;
-    opacity: 0.5;
-    clear: both;  /*limpia los float sgts*/
-    padding: 10px 0px;
-    height: 200px;
+.servicios > h1{
+    padding-top: 300px;
     font-size: 5em;
 }
+
+footer{
+    /* clear: both; limpia los float sgts*/
+    height: 400px;
+}
+
+footer > h1{
+    padding-top: 50px;
+    font-size: 5em;
+}
+
+input[type=text],input[type=email] ,textarea[type=textarea]{
+    background-color: rgb(22, 21, 21);
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(31, 240, 48);
+    color: #fff;
+}
+input[type=submit]{
+    background-color:rgb(31, 240, 48);
+    width: 50%;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
