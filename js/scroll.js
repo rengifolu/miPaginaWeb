@@ -7,7 +7,7 @@ function apareceScroll(){
     // console.log("elementoAparece : "+elementoAparece);
     
 
-    document.addEventListener("wheel", function(){
+    document.addEventListener("scroll", function(){
         var topVent = html.scrollTop;
         // console.log("topVent : "+topVent)
         for (i = 0; i < elementoAparece.length; i++) {
@@ -28,6 +28,6 @@ function apareceScroll(){
     })
 }
 
-window.addEventListener("scroll", apareceScroll);
+apareceScroll();
 
 
