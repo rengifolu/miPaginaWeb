@@ -28,6 +28,6 @@ function apareceScroll(){
     })
 }
 
-apareceScroll();
+window.addEventListener("scroll", apareceScroll);
 
 
