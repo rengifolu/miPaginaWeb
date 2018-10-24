@@ -37,10 +37,9 @@ function apareceScroll(){
     console.log(html)
     var elementoAparece = document.getElementsByClassName("parallax");
 
-<<<<<<< HEAD
-=======
-    document.addEventListener("scroll", function(){
->>>>>>> 041c63593cf2370644c2ed060b4f9744ec65800a
+
+  
+
         var topVent = html.scrollTop;
         // console.log("topVent : "+topVent)
         for (i = 0; i < elementoAparece.length; i++) {
@@ -58,8 +57,8 @@ function apareceScroll(){
             }
             
         }
-    
- }
+}
+
  
  window.addEventListener("scroll", apareceScroll);
 
