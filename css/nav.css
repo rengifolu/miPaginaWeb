@@ -65,13 +65,13 @@ nav > ul > li > ul {
 
 /* TERCER NIVEL */
 
-nav ul ul ul {
+/* nav ul ul ul {
     left: 100%;
     top: 0;
-}
+} */
 
-
-nav ul li.right {float: right;}
+/* PARA ICONO */
+/* nav ul li.right {float: right;} */
 
 /* RESPONSIVE A 375PX  iphone x*/
 @media screen and (max-width:414px){
@@ -80,7 +80,23 @@ nav ul li.right {float: right;}
     }
     
     /* nav a{display: none;} */ 
+
+
+    nav{
+        width: 80%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+    }
+
     nav ul li {
+        display: block;
+        float: none;
+        border-bottom:rgba(255, 255, 255, .3)
+    }
+
+
+    /* nav ul li {
         float: none;
     }
     
@@ -91,6 +107,6 @@ nav ul li.right {float: right;}
     nav li.dropdown-content:hover {
         display: block;
         background: blue;
-}
+} */
 
 }
