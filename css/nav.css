@@ -90,6 +90,7 @@ nav ul li.right {float: right;}
     
     nav li.dropdown-content:hover {
         display: block;
+        background: blue;
 }
 
 }
