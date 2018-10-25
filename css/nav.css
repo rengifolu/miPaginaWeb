@@ -73,6 +73,12 @@ nav > ul > li > ul {
 /* PARA ICONO */
 /* nav ul li.right {float: right;} */
 
+
+
+.menu_bar{
+    display: none;
+}
+
 /* RESPONSIVE A 375PX  iphone x*/
 @media screen and (max-width:414px){
     body{
@@ -80,7 +86,6 @@ nav > ul > li > ul {
     }
     
     /* nav a{display: none;} */ 
-
 
     nav{
         width: 80%;
@@ -93,6 +98,27 @@ nav > ul > li > ul {
         display: block;
         float: none;
         border-bottom:rgba(255, 255, 255, .3)
+    }
+
+    .menu_bar{
+        display: block;
+        width: 100%;
+        /* background: #ccc; */
+    }
+    .menu_bar .btn-menu{
+        display: block;
+        padding: 25px;
+        color:rgb(31, 240, 48);
+        text-decoration: none;
+        /* font-weight: bold; */
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .menu_bar span{
+        float: right;
     }
 
 
