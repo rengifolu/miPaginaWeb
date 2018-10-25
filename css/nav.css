@@ -69,3 +69,23 @@ nav ul ul ul {
     left: 100%;
     top: 0;
 }
+
+
+nav ul li.right {float: right;}
+
+/* RESPONSIVE A 375PX  iphone x*/
+@media screen and (max-width:414px){
+    body{
+        background: #528fd5;
+    }
+    
+    /* nav a{display: none;} */ 
+    nav ul li {
+        float: none;
+    }
+
+    nav ul li.dropdown-content {
+        display: block;
+        float: none;
+    }
+}
