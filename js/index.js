@@ -1,4 +1,5 @@
 // SE EJECUTA CUANDO INICIA PAGINA
+var contador = 1;
 window.onload = function inic (){
     var nombre = document.getElementById("nombre");
     var profesion = document.getElementById("profesion");
@@ -13,6 +14,30 @@ window.onload = function inic (){
     foto.style.height = "50%";
     foto.style.width = "50%";
     foto.style.transitionDuration = "1s";
+
+
+
+
+    var d = document.getElementById("menu_bar");
+    var nav = document.getElementById("nav");
+    
+    d.addEventListener("click", function(){
+        console.log("evento load detectado!  " + contador);
+        if (contador== 1) {
+        nav.style.left = "0px";
+        nav.style.transitionDuration = "1s";
+        contador = 0;
+        console.log(contador);
+        console.log(nav.style.left)
+    } else {
+        nav.style.left = "-200px";
+        nav.style.transitionDuration = "1s";
+        contador = 1;
+        console.log(contador);
+        console.log(nav.style.left)
+    }
+    });
+
     
 }
 
@@ -34,29 +59,8 @@ window.onload = function inic (){
 //             contador = 1;
 //         }
 //     }
-var contador = 1;
-window.onload = function load() {
-    var d = document.getElementById("menu_bar");
-    var nav = document.getElementById("nav");
-    
-    d.addEventListener("click", function(){
-        console.log("evento load detectado!  " + contador);
-        if (contador== 1) {
-        nav.style.left = "0px";
-        nav.style.transitionDuration = "1s";
-        contador = 0;
-        console.log(contador);
-        console.log(nav.style.left)
-    } else {
-        nav.style.left = "-200px";
-        nav.style.transitionDuration = "1s";
-        contador = 1;
-        console.log(contador);
-        console.log(nav.style.left)
-    }
-    });
 
-  }
+
 
 
 //SCROLL DE BLOQUE DE IMAGEN

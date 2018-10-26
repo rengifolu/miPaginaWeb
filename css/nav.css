@@ -92,6 +92,7 @@ nav > ul > li > ul {
         height: 100%;
         margin: 0;
         position: fixed;
+        left: -200px;
     }
 
     nav ul li {
