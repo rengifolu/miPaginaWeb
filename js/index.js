@@ -31,7 +31,7 @@ window.onload = function inic (){
         console.log(contador);
         console.log(nav.style.left)
     } else {
-        nav.style.left = "-200px";
+        nav.style.left = "-400px";
         nav.style.transitionDuration = "1s";
         contador = 1;
         console.log(contador);
@@ -52,7 +52,7 @@ function myFunction(x) {
         //nav.style.opacity = "0";
         // nav.style.transition = ".5s";
         nav.style.boxShadow = "";
-        //nav.style.backgroundColor = "grey";
+        // nav.style.backgroundColor = "rgb(75, 77, 75)";
         //nav.style.opacity = "0.2";
         //nav.style.color = "rgb(11, 238, 22)";
     } else {
