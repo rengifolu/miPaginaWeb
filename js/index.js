@@ -39,29 +39,35 @@ window.onload = function inic (){
     }
     });
 
-    
+
+// PARA RESPONSIVE DE NAV
+var x = window.matchMedia("(max-width: 414px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
+var nav = document.getElementById("nav");
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        // document.body.style.backgroundColor = "yellow";
+        //nav.style.opacity = "0";
+        // nav.style.transition = ".5s";
+        nav.style.boxShadow = "";
+        //nav.style.backgroundColor = "grey";
+        //nav.style.opacity = "0.2";
+        //nav.style.color = "rgb(11, 238, 22)";
+    } else {
+        // document.body.style.backgroundColor = "pink";
+        //nav.style.opacity = "1";
+        // nav.style.transition = ".5s";
+        nav.style.boxShadow = "-5px -5px 45px 5px rgb(224, 113, 9)";
+        
+       // nav.style.color = "rgb(11, 238, 22)";
+    }
 }
 
 
-
-
-// // SE EJECUTA CUANDO INICIA PAGINA
-// var contador =1;
-//     var d = document.getElementsByClassName("menu_bar");
-//     d.addEventListener("click", myFunction);
-//     function myFunction() {
-//         if (contador== 1) {
-//             var nav = document.getElementsByTagName("nav");
-//             nav.style.left = "0";
-//             contador = 0;
-//         } else {
-//             var nav = document.getElementsByTagName("nav");
-//             nav.style.left = "-100";
-//             contador = 1;
-//         }
-//     }
-
-
+    
+}
 
 
 //SCROLL DE BLOQUE DE IMAGEN
@@ -95,3 +101,10 @@ function scrollbBloqueImagen(){
 }
 
 window.addEventListener("scroll", scrollbBloqueImagen);
+
+
+
+
+
+
+
