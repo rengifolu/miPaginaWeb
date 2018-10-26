@@ -1,6 +1,7 @@
 // SE EJECUTA CUANDO INICIA PAGINA
 var contador = 1;
 window.onload = function inic (){
+    // PARA TRANSICION AL GARGAR PAGINA AL INICIO
     var nombre = document.getElementById("nombre");
     var profesion = document.getElementById("profesion");
     var foto = document.getElementById("imagen");
@@ -17,7 +18,7 @@ window.onload = function inic (){
 
 
 
-
+    // PARA NAVBAR
     var d = document.getElementById("menu_bar");
     var nav = document.getElementById("nav");
     
