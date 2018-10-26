@@ -103,6 +103,7 @@ nav > ul > li > ul {
     .menu_bar{
         display: block;
         width: 100%;
+        position: fixed;
         /* background: #ccc; */
     }
     .menu_bar .btn-menu{

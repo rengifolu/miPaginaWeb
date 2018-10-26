@@ -1,23 +1,3 @@
-// function apareceScroll(){
-//     var html = document.getElementsByTagName("html")[0];
-//     var elementoAparece = document.getElementsByClassName("logo");
-    
-
-//     document.addEventListener("wheel", function(){
-//         var topVent = html.scrollTop;
-//         for (i = 0; i < elementoAparece.length; i++) {
-//             var topelemAparece = elementoAparece[i].offsetTop;
-//             if (topVent > topelemAparece - 400) {
-//                 elementoAparece[i].style.opacity = 1;
-//             }
-            
-//         }
-//     })
-// }
-
-// apareceScroll();
-// console.log("f")
-
 // SE EJECUTA CUANDO INICIA PAGINA
 window.onload = function inic (){
     var nombre = document.getElementById("nombre");
@@ -35,6 +15,49 @@ window.onload = function inic (){
     foto.style.transitionDuration = "1s";
     
 }
+
+
+
+
+// // SE EJECUTA CUANDO INICIA PAGINA
+// var contador =1;
+//     var d = document.getElementsByClassName("menu_bar");
+//     d.addEventListener("click", myFunction);
+//     function myFunction() {
+//         if (contador== 1) {
+//             var nav = document.getElementsByTagName("nav");
+//             nav.style.left = "0";
+//             contador = 0;
+//         } else {
+//             var nav = document.getElementsByTagName("nav");
+//             nav.style.left = "-100";
+//             contador = 1;
+//         }
+//     }
+var contador = 1;
+window.onload = function load() {
+    var d = document.getElementById("menu_bar");
+    var nav = document.getElementById("nav");
+    
+    d.addEventListener("click", function(){
+        console.log("evento load detectado!  " + contador);
+        if (contador== 1) {
+        nav.style.left = "0px";
+        nav.style.transitionDuration = "1s";
+        contador = 0;
+        console.log(contador);
+        console.log(nav.style.left)
+    } else {
+        nav.style.left = "-200px";
+        nav.style.transitionDuration = "1s";
+        contador = 1;
+        console.log(contador);
+        console.log(nav.style.left)
+    }
+    });
+
+  }
+
 
 //SCROLL DE BLOQUE DE IMAGEN
 function scrollbBloqueImagen(){

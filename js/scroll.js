@@ -1,7 +1,7 @@
 //SCROLL DE PARALLAX
 function apareceScroll(){
     var html = document.getElementsByTagName("html")[0];
-    console.log(html)
+    // console.log(html)
     var elementoAparece = document.getElementsByClassName("parallax");
 
 
