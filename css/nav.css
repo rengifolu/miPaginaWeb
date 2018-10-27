@@ -26,10 +26,11 @@ nav a {
     padding: 0 2.5em;
     display: block;  /* Si no lo aplicamos entonces paddin solo aplica 20 a los lados en cambio poniendolo tambien aplica 0 arriba y abajo */
     transition: .4s;
+    font-size: 35px;
 }
 
 nav a:hover {
-    background: #75ACEC;
+    background: rgb(98, 131, 106);
 }
 
 nav li ul {
@@ -89,7 +90,7 @@ nav > ul > li > ul {
 
     nav{
         width: 80%;
-        height: 45%;
+        height: 50%;
         margin: 0;
         position: fixed;
         left: -400px;
