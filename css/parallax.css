@@ -21,7 +21,7 @@
 /* RESPONSIVE A 375PX  iphone x*/
 @media screen and (max-width:414px){
     .parallax {
-        opacity: 0;
+        opacity: 1;
     }
 
 }
