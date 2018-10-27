@@ -22,6 +22,7 @@
 @media screen and (max-width:414px){
     .parallax {
         opacity: 1;
+        background-image: url("../img/ciudad-de-colonia.gif")
     }
 
 }
