@@ -52,9 +52,18 @@ function myFunction(x) {
         //nav.style.opacity = "0";
         // nav.style.transition = ".5s";
         nav.style.boxShadow = "";
-        // nav.style.backgroundColor = "rgb(75, 77, 75)";
+        
         //nav.style.opacity = "0.2";
         //nav.style.color = "rgb(11, 238, 22)";
+        nombre.style.fontSize = "3.5em";
+        nombre.style.transitionDuration = "1s";
+    
+        profesion.style.fontSize = "2.5em";
+        profesion.style.transitionDuration = "1s";
+    
+        foto.style.height = "50%";
+        foto.style.width = "50%";
+        foto.style.transitionDuration = "1s";
     } else {
         // document.body.style.backgroundColor = "pink";
         //nav.style.opacity = "1";
@@ -62,6 +71,42 @@ function myFunction(x) {
         nav.style.boxShadow = "-5px -5px 45px 5px rgb(224, 113, 9)";
         
        // nav.style.color = "rgb(11, 238, 22)";
+
+
+
+
+
+       //SCROLL DE BLOQUE DE IMAGEN
+function scrollbBloqueImagen(){
+    var yPos = window.pageYOffset;
+    var nombre = document.getElementById("nombre");
+    var profesion = document.getElementById("profesion");
+    var foto = document.getElementById("imagen");
+ 
+    if (yPos>200) {
+     nombre.style.fontSize = "5em";
+     nombre.style.transitionDuration = "1s";
+ 
+     profesion.style.fontSize = "3em";
+     profesion.style.transitionDuration = "1s";
+ 
+     foto.style.height = "40%";
+     foto.style.width = "40%";
+     foto.style.transitionDuration = "1s";
+    } else {
+     nombre.style.fontSize = "6em";
+     nombre.style.transitionDuration = "1s";
+ 
+     profesion.style.fontSize = "4em";
+     profesion.style.transitionDuration = "1s";
+ 
+     foto.style.height = "50%";
+     foto.style.width = "50%";
+     foto.style.transitionDuration = "1s";
+    }
+ }
+ 
+ window.addEventListener("scroll", scrollbBloqueImagen);
     }
 }
 
@@ -70,37 +115,7 @@ function myFunction(x) {
 }
 
 
-//SCROLL DE BLOQUE DE IMAGEN
-function scrollbBloqueImagen(){
-   var yPos = window.pageYOffset;
-   var nombre = document.getElementById("nombre");
-   var profesion = document.getElementById("profesion");
-   var foto = document.getElementById("imagen");
 
-   if (yPos>200) {
-    nombre.style.fontSize = "5em";
-    nombre.style.transitionDuration = "1s";
-
-    profesion.style.fontSize = "3em";
-    profesion.style.transitionDuration = "1s";
-
-    foto.style.height = "40%";
-    foto.style.width = "40%";
-    foto.style.transitionDuration = "1s";
-   } else {
-    nombre.style.fontSize = "6em";
-    nombre.style.transitionDuration = "1s";
-
-    profesion.style.fontSize = "4em";
-    profesion.style.transitionDuration = "1s";
-
-    foto.style.height = "50%";
-    foto.style.width = "50%";
-    foto.style.transitionDuration = "1s";
-   }
-}
-
-window.addEventListener("scroll", scrollbBloqueImagen);
 
 
 

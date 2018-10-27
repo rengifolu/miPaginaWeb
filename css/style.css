@@ -153,4 +153,65 @@ input[type=submit]{
     .nav{
         box-shadow: 0px 0px 0px 0px rgb(224, 113, 9);
     }
+
+
+    /* .titulo{
+        width: 25%;
+        float: left;
+        
+        color: #5c2e8a;
+        padding-top: 150px;
+    }
+    
+    .titulo > h1{
+        font-size: 3em;
+        /* font-size: 100px; */
+    
+    /*.titulo > h2{
+        font-size: 1em;
+    
+    
+    } */
+
+    .primero{
+        height: 800px;
+    }
+
+    .titulo{
+        padding-top: 100px;
+        float: none;
+        padding-left: 25%;
+    }
+
+    .imagen{
+        float: none;
+        padding-top: 100px;
+        padding-left: 25%;
+    }
+    
+
+    .parallax{
+        height: 600px;
+    }
+
+
+    .estudios{
+        height: 800px;  
+    }
+ 
+    .estudios > h1{
+        padding-top: 50px;
+        font-size: 5em;
+    }
+
+    .servicios{
+        height: 800px;
+    }
+
+    footer{
+        height: 500px;
+    }
+
+
+
 } 
