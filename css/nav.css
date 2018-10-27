@@ -94,8 +94,6 @@ nav > ul > li > ul {
         margin: 0;
         position: fixed;
         left: -250px;
-        /* box-shadow: ""; */
-        /* border: 5px white; */
     }
 
     nav ul li {
