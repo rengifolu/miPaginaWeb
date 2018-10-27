@@ -64,7 +64,7 @@ function myFunction(x) {
         foto.style.height = "50%";
         foto.style.width = "50%";
         foto.style.transitionDuration = "1s";
-        // window.addEventListener("scroll", apareceScroll);
+        //window.addEventListener("scroll", apareceScroll);
     } else { 
         // SI ES MAS GRANDE Q IPHONE
         window.addEventListener("scroll", scrollbBloqueImagen);

@@ -82,35 +82,32 @@ nav > ul > li > ul {
 
 /* RESPONSIVE A 375PX  iphone x*/
 @media screen and (max-width:414px){
-    /* body{
-        background: black;
-    } */
-    
-    /* nav a{display: none;} */ 
 
     nav{
         width: 80%;
-        height: 60%;
+        height: 54.5%;
         margin: 0;
         position: fixed;
-        left: -250px;
+        left: -400px;
     }
 
     nav ul li {
         display: block;
         float: none;
+        border-bottom: solid 1px rgb(31, 240, 48);
+        border-right: solid 1px rgb(31, 240, 48);
         /* border-bottom:rgb(255, 255, 255)*/
     }
 
     .menu_bar{
         display: block;
-        width: 100%;
+        width: 99%;
         position: fixed;
         /* background: #ccc; */
     }
     .menu_bar .btn-menu{
         display: block;
-        padding: 25px;
+        /*padding: 25px;*/
         color:rgb(31, 240, 48);
         text-decoration: none;
         /* font-weight: bold; */
@@ -121,27 +118,9 @@ nav > ul > li > ul {
         
     }
 
-    /* .menu_bar a{
-        float: left;
-    } */
-
-
     .menu_bar span{
+        padding: 12px;
         float: right;
         font-size: 40px;
     }
-
-    /* nav ul li {
-        float: none;
-    }
-    
-    nav li.dropdown-content {
-        display: none;
-    }
-    
-    nav li.dropdown-content:hover {
-        display: block;
-        background: blue;
-} */
-
 }
