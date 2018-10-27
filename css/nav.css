@@ -85,10 +85,11 @@ nav > ul > li > ul {
 
     nav{
         width: 80%;
-        height: 54.5%;
+        height: 60%;
         margin: 0;
         position: fixed;
         left: -400px;
+        box-shadow: "";
     }
 
     nav ul li {
@@ -96,7 +97,6 @@ nav > ul > li > ul {
         float: none;
         border-bottom: solid 1px rgb(31, 240, 48);
         border-right: solid 1px rgb(31, 240, 48);
-        /* border-bottom:rgb(255, 255, 255)*/
     }
 
     .menu_bar{
@@ -121,6 +121,6 @@ nav > ul > li > ul {
     .menu_bar span{
         padding: 12px;
         float: right;
-        font-size: 40px;
+        font-size: 10px;
     }
 }
