@@ -24,7 +24,6 @@
         opacity: 1;
         background-image: url("../img/chorrillos.jpeg");
         background-size: 100% 100%;
-        overflow: scroll;
     }
 
 }
