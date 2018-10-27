@@ -1,7 +1,6 @@
 .parallax {
     opacity: 0;
     /* The image used */
-    background-color: rgb(22, 21, 21);
     background-image: url("../img/colonia.jpg");
 
     /* Set a specific height */
@@ -17,4 +16,12 @@
 .parallax > h1 {
     padding-top: 350px;
     font-size: 5em
+}
+
+/* RESPONSIVE A 375PX  iphone x*/
+@media screen and (max-width:414px){
+    .parallax {
+        opacity: 0;
+    }
+
 }
