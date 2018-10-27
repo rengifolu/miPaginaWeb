@@ -26,7 +26,7 @@ nav a {
     padding: 0 2.5em;
     display: block;  /* Si no lo aplicamos entonces paddin solo aplica 20 a los lados en cambio poniendolo tambien aplica 0 arriba y abajo */
     transition: .4s;
-    font-size: 35px;
+    font-size: 22px;
 }
 
 nav a:hover {
