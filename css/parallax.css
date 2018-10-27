@@ -23,7 +23,7 @@
     .parallax {
         opacity: 1;
         background-image: url("../img/chorrillos.jpeg");
-        width: auto;
+        background-size: 100% 100%;
     }
 
 }
