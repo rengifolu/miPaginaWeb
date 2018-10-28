@@ -46,61 +46,34 @@ myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listener function on state changes
 
 var nav = document.getElementById("nav");
-function myFunction(x) {
-    if (x.matches) { // If media query matches
-        // document.body.style.backgroundColor = "yellow";
- 
-        nav.style.boxShadow = "";
-
-        nombre.style.fontSize = "3.5em";
-        nombre.style.transitionDuration = "1s";
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            // document.body.style.backgroundColor = "yellow";
     
-        profesion.style.fontSize = "2.5em";
-        profesion.style.transitionDuration = "1s";
-    
-        foto.style.height = "50%";
-        foto.style.width = "50%";
-        foto.style.transitionDuration = "1s";
-        //window.addEventListener("scroll", apareceScroll);
-    } else { 
-        // SI ES MAS GRANDE Q IPHONE
-        window.addEventListener("scroll", scrollbBloqueImagen);
-        window.addEventListener("scroll", scrollNavbar);
-        window.addEventListener("scroll", apareceScroll);
+            nav.style.boxShadow = "";
 
+            nombre.style.fontSize = "3.5em";
+            nombre.style.transitionDuration = "1s";
+        
+            profesion.style.fontSize = "2.5em";
+            profesion.style.transitionDuration = "1s";
+        
+            foto.style.height = "50%";
+            foto.style.width = "50%";
+            foto.style.transitionDuration = "1s";
+            //window.addEventListener("scroll", apareceScroll);
+        } else { 
+            // SI ES MAS GRANDE Q IPHONE
+            window.addEventListener("scroll", scrollbBloqueImagen);
+            window.addEventListener("scroll", scrollNavbar);
+            window.addEventListener("scroll", apareceScroll);
+            window.addEventListener("click", alertaIconosHobbie);
+
+        }
     }
+   
 }
 
-
-//SCROLL DE BLOQUE DE IMAGEN
-function scrollbBloqueImagen(){
-var yPos = window.pageYOffset;
-var nombre = document.getElementById("nombre");
-var profesion = document.getElementById("profesion");
-var foto = document.getElementById("imagen");
-
-    if (yPos>200) {
-        nombre.style.fontSize = "5em";
-        nombre.style.transitionDuration = "1s";
-
-        profesion.style.fontSize = "3em";
-        profesion.style.transitionDuration = "1s";
-
-        foto.style.height = "40%";
-        foto.style.width = "40%";
-        foto.style.transitionDuration = "1s";
-    } else {
-        nombre.style.fontSize = "6em";
-        nombre.style.transitionDuration = "1s";
-
-        profesion.style.fontSize = "4em";
-        profesion.style.transitionDuration = "1s";
-
-        foto.style.height = "50%";
-        foto.style.width = "50%";
-        foto.style.transitionDuration = "1s";
-    }
-}
 
 
  // SCROLL DE NAVBAR
@@ -116,8 +89,37 @@ function scrollNavbar(){
             nav.style.boxShadow = "";
             nav.style.transitionDuration = "1s";
         }
-    }
+}
 
+//SCROLL DE BLOQUE DE IMAGEN
+function scrollbBloqueImagen(){
+    var yPos = window.pageYOffset;
+    var nombre = document.getElementById("nombre");
+    var profesion = document.getElementById("profesion");
+    var foto = document.getElementById("imagen");
+    
+        if (yPos>200) {
+            nombre.style.fontSize = "5em";
+            nombre.style.transitionDuration = "1s";
+    
+            profesion.style.fontSize = "3em";
+            profesion.style.transitionDuration = "1s";
+    
+            foto.style.height = "40%";
+            foto.style.width = "40%";
+            foto.style.transitionDuration = "1s";
+        } else {
+            nombre.style.fontSize = "6em";
+            nombre.style.transitionDuration = "1s";
+    
+            profesion.style.fontSize = "4em";
+            profesion.style.transitionDuration = "1s";
+    
+            foto.style.height = "50%";
+            foto.style.width = "50%";
+            foto.style.transitionDuration = "1s";
+        }
+    }
 
 //SCROLL DE PARALLAX
 function apareceScroll(){
@@ -139,12 +141,13 @@ function apareceScroll(){
         } 
     }
 }
+
+ //
+ function alertaIconosHobbie(){
+    var hobie = document.getElementById("hobie");
+    console.log("caca");
    
 }
-
-
-
-
 
 
 

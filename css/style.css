@@ -115,6 +115,29 @@ header,footer{
     font-size: 5em;
 }
 
+
+.servicios p{
+    font-size: 2em;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+.parallax ul{
+    padding-top: 50px ;
+
+}
+
+.parallax ul li{
+    border: 20px solid rgba(0,0,0,0.5);
+    padding: 10px 10px;
+    display: inline;
+    color: rgb(31, 240, 48);
+    cursor: pointer;
+}
+
+
 footer{
     /* clear: both; limpia los float sgts*/
     height: 400px;
@@ -169,6 +192,10 @@ input[type=submit]{
         height: 600px;
     }
 
+    .parallax ul li {
+        display: block;
+    }
+
     .estudios{
         height: 800px;  
     }
@@ -181,6 +208,20 @@ input[type=submit]{
     .servicios{
         height: 800px;
     }
+
+    .servicios h1{
+        padding-top: 100px;
+    }
+
+    .servicios p{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .parallax > h1{
+        padding-top: 25px;
+    }
+
 
     footer{
         height: 500px;

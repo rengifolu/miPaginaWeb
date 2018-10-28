@@ -81,7 +81,7 @@ nav > ul > li > ul {
 }
 
 /* RESPONSIVE A 375PX  iphone x*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 414px) {
 
     nav{
         width: 80%;
