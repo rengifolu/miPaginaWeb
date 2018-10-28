@@ -137,6 +137,9 @@ header,footer{
     cursor: pointer;
 }
 
+#myPopup{
+    display: none;
+}
 
 footer{
     /* clear: both; limpia los float sgts*/
@@ -219,7 +222,7 @@ input[type=submit]{
     }
 
     .parallax > h1{
-        padding-top: 25px;
+        padding-top: 100px;
     }
 
 

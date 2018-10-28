@@ -67,8 +67,9 @@ var nav = document.getElementById("nav");
             window.addEventListener("scroll", scrollbBloqueImagen);
             window.addEventListener("scroll", scrollNavbar);
             window.addEventListener("scroll", apareceScroll);
-            window.addEventListener("click", alertaIconosHobbie);
-
+            window.addEventListener("click", myPopUp);
+            //alertaIconosHobbie();
+        
         }
     }
    
@@ -143,12 +144,16 @@ function apareceScroll(){
 }
 
  //
- function alertaIconosHobbie(){
-    var hobie = document.getElementById("hobie");
-    console.log("caca");
-   
-}
+ 
+// When the user clicks on div, open the popup
+function myPopUp() {
+    //var pop = document.getElementsByTagName("popup");
+    var popup = document.getElementById("myPopup");
+    // popup.classList.toggle("show");
 
+    popup.style.display = "inline";
+    console.log("jiji")
+}
 
 
 
