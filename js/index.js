@@ -49,10 +49,12 @@ window.onload = function inic (){
     if (estado === false) {
         console.log("evento load detectado!  " + contador);
         popup.style.display = "inline";
+        popup.style.transitionDuration = "1s";
         estado = !estado;
         console.log("jiji")
     } else {
         popup.style.display = "none";
+        popup.style.transitionDuration = "1s";
         estado = !estado;
         console.log("jojo")
     }
