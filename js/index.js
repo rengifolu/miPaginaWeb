@@ -7,10 +7,10 @@ window.onload = function inic (){
     var profesion = document.getElementById("profesion");
     var foto = document.getElementById("imagen");
     
-    nombre.style.fontSize = "6em";
+    nombre.style.fontSize = "5em";
     nombre.style.transitionDuration = "1s";
 
-    profesion.style.fontSize = "4em";
+    profesion.style.fontSize = "3em";
     profesion.style.transitionDuration = "1s";
 
     foto.style.height = "50%";

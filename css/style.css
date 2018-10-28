@@ -33,11 +33,11 @@ header,footer{
 }
 
 .titulo > h1{
-    font-size: 5em;
+    font-size: 4em;
     /* font-size: 100px; */
 }
 .titulo > h2{
-    font-size: 3em;
+    font-size: 2em;
     /* font-size: 70px; */
 
 }
@@ -78,11 +78,11 @@ header,footer{
 
 .estudios > h1{
     padding-top: 250px;
-    font-size: 5em;
+    font-size: 4em;
 }
 
 .estudios > ul > li {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 /* ACTUALIDAD */
@@ -97,7 +97,7 @@ header,footer{
 
 .actualidad > h1{
     padding-top: 300px;
-    font-size: 5em;
+    font-size: 4em;
 }
 
 /* SERVICIOS */
@@ -112,7 +112,7 @@ header,footer{
 
 .servicios > h1{
     padding-top: 300px;
-    font-size: 5em;
+    font-size: 4em;
 }
 
 
@@ -148,7 +148,7 @@ footer{
 
 footer > h1{
     padding-top: 50px;
-    font-size: 5em;
+    font-size: 4em;
 }
 
 input[type=text],input[type=email] ,textarea[type=textarea]{
@@ -205,7 +205,7 @@ input[type=submit]{
  
     .estudios > h1{
         padding-top: 50px;
-        font-size: 5em;
+        font-size: 4em;
     }
 
     .servicios{
