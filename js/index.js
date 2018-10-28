@@ -46,13 +46,15 @@ window.onload = function inic (){
     var popup = document.getElementById("myPopup");
     
     h.addEventListener("click", function(){
+    if (estado === false) {
         console.log("evento load detectado!  " + contador);
         popup.style.display = "inline";
         estado = !estado;
-    console.log("jiji")
+        console.log("jiji")
     } else {
         popup.style.display = "none";
         estado = !estado;
+        console.log("jojo")
     }
 });
 
