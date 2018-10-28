@@ -1,5 +1,6 @@
 // SE EJECUTA CUANDO INICIA PAGINA
 var contador = 1;
+var estado = false;
 window.onload = function inic (){
     // PARA TRANSICION AL GARGAR PAGINA AL INICIO
     var nombre = document.getElementById("nombre");
@@ -38,6 +39,22 @@ window.onload = function inic (){
         console.log(nav.style.left)
     }
     });
+    
+    
+        // PARA CLICK HOBIE
+    var h = document.getElementById("popup");
+    var popup = document.getElementById("myPopup");
+    
+    h.addEventListener("click", function(){
+        console.log("evento load detectado!  " + contador);
+        popup.style.display = "inline";
+        estado = !estado;
+    console.log("jiji")
+    } else {
+        popup.style.display = "none";
+        estado = !estado;
+    }
+});
 
 
 // PARA RESPONSIVE DE NAV
@@ -142,19 +159,6 @@ function apareceScroll(){
         } 
     }
 }
-
- //
- 
-// When the user clicks on div, open the popup
-function myPopUp() {
-    //var pop = document.getElementsByTagName("popup");
-    var popup = document.getElementById("myPopup");
-    // popup.classList.toggle("show");
-
-    popup.style.display = "inline";
-    console.log("jiji")
-}
-
 
 
 
