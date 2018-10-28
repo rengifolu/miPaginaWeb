@@ -88,7 +88,7 @@ var nav = document.getElementById("nav");
             window.addEventListener("scroll", scrollbBloqueImagen);
             window.addEventListener("scroll", scrollNavbar);
             window.addEventListener("scroll", apareceScroll);
-            window.addEventListener("click", myPopUp);
+            //window.addEventListener("click", myPopUp);
             //alertaIconosHobbie();
         
         }
