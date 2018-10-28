@@ -81,15 +81,14 @@ nav > ul > li > ul {
 }
 
 /* RESPONSIVE A 375PX  iphone x*/
-@media screen and (max-width:414px){
+@media screen and (max-width: 767px) {
 
     nav{
         width: 80%;
-        height: 60%;
+        height: 65%;
         margin: 0;
         position: fixed;
         left: -400px;
-        box-shadow: "";
     }
 
     nav ul li {
@@ -120,5 +119,13 @@ nav > ul > li > ul {
         padding: 12px;
         float: right;
         font-size: 40px;
+    }
+}
+
+
+
+@media screen and (orientation: landscape){
+    nav{
+        box-shadow: "";
     }
 }

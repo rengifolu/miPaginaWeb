@@ -49,12 +49,9 @@ var nav = document.getElementById("nav");
 function myFunction(x) {
     if (x.matches) { // If media query matches
         // document.body.style.backgroundColor = "yellow";
-        //nav.style.opacity = "0";
-        // nav.style.transition = ".5s";
+ 
         nav.style.boxShadow = "";
-        
-        //nav.style.opacity = "0.2";
-        //nav.style.color = "rgb(11, 238, 22)";
+
         nombre.style.fontSize = "3.5em";
         nombre.style.transitionDuration = "1s";
     
