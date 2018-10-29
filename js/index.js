@@ -1,6 +1,5 @@
 // SE EJECUTA CUANDO INICIA PAGINA
 var contador = 1;
-var estado = false;
 window.onload = function inic (){
     // PARA TRANSICION AL GARGAR PAGINA AL INICIO
     var nombre = document.getElementById("nombre");
@@ -19,46 +18,10 @@ window.onload = function inic (){
 
 
 
-    // PARA CLICK NAVBAR
-    var d = document.getElementById("menu_bar");
-    var nav = document.getElementById("nav");
+    navBar()
     
-    d.addEventListener("click", function(){
-        console.log("evento load detectado!  " + contador);
-        if (contador== 1) {
-        nav.style.left = "0px";
-        nav.style.transitionDuration = "1s";
-        contador = 0;
-        console.log(contador);
-        console.log(nav.style.left)
-    } else {
-        nav.style.left = "-400px";
-        nav.style.transitionDuration = "1s";
-        contador = 1;
-        console.log(contador);
-        console.log(nav.style.left)
-    }
-    });
-    
-    
-        // PARA CLICK HOBIE
-    var h = document.getElementById("popup");
-    var popup = document.getElementById("myPopup");
-    
-    h.addEventListener("click", function(){
-    if (estado === false) {
-        console.log("evento load detectado!  " + contador);
-        popup.style.display = "inline";
-        popup.style.transitionDuration = "1s";
-        estado = !estado;
-        console.log("jiji")
-    } else {
-        popup.style.display = "none";
-        popup.style.transitionDuration = "1s";
-        estado = !estado;
-        console.log("jojo")
-    }
-});
+    hobie ();
+
 
 
 // PARA RESPONSIVE DE NAV
@@ -164,6 +127,54 @@ function apareceScroll(){
     }
 }
 
+
+// PARA CLICK HOBIE
+var estado = false;
+function hobie (){
+        
+        var h = document.getElementById("popup");
+        var popup = document.getElementsByClassName("myPopup");
+        
+        h.addEventListener("click", function(){
+            if (estado === false) {
+                popup[0].style.transitionDuration = "1s"
+                popup[0].style.display = "inline-block";
+                ;
+                estado = !estado;
+                console.log("jiji")
+            } else {
+                popup[0].style.display = "none";
+                //popup[0].style.transitionDuration = "2s";
+                estado = !estado;
+                console.log("jojo")
+            } 
+        
+    });
+}
+
+// PARA CLICK NAVBAR
+function navBar(){
+        
+    var d = document.getElementById("menu_bar");
+    var nav = document.getElementById("nav");
+    
+    d.addEventListener("click", function(){
+        console.log("evento load detectado!  " + contador);
+        if (contador== 1) {
+        nav.style.left = "0px";
+        nav.style.transitionDuration = "1s";
+        contador = 0;
+        console.log(contador);
+        console.log(nav.style.left)
+    } else {
+        nav.style.left = "-400px";
+        nav.style.transitionDuration = "1s";
+        contador = 1;
+        console.log(contador);
+        console.log(nav.style.left)
+    }
+    });
+}
 
 
 
