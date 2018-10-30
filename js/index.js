@@ -137,19 +137,17 @@ function hobie (){
         
         h.addEventListener("click", function(){
             if (estado === false) {
-                popup[0].style.transitionDuration = "1s"
                 popup[0].style.display = "inline-block";
-                ;
                 estado = !estado;
                 console.log("jiji")
             } else {
                 popup[0].style.display = "none";
-                //popup[0].style.transitionDuration = "2s";
                 estado = !estado;
                 console.log("jojo")
             } 
         
     });
+    
 }
 
 // PARA CLICK NAVBAR
