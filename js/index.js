@@ -1,27 +1,15 @@
 // SE EJECUTA CUANDO INICIA PAGINA
 var contador = 1;
+var nombre = null;
+var profesion = null;
+var foto = null;
 window.onload = function inic (){
-    // PARA TRANSICION AL GARGAR PAGINA AL INICIO
-    var nombre = document.getElementById("nombre");
-    var profesion = document.getElementById("profesion");
-    var foto = document.getElementById("imagen");
-    
-    nombre.style.fontSize = "4em";
-    nombre.style.transitionDuration = "1s";
+    nombre = document.getElementById("nombre");
+    profesion = document.getElementById("profesion");
+    foto = document.getElementById("imagen");
 
-    profesion.style.fontSize = "2em";
-    profesion.style.transitionDuration = "1s";
-
-    foto.style.height = "50%";
-    foto.style.width = "50%";
-    foto.style.transitionDuration = "1s";
-
-
-
-    navBar()
     
     hobie ();
-
 
 
 // PARA RESPONSIVE DE NAV
@@ -29,28 +17,27 @@ var x = window.matchMedia("(max-width: 414px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listener function on state changes
 
-var nav = document.getElementById("nav");
+
+//var nav = document.getElementById("nav");
     function myFunction(x) {
         if (x.matches) { // If media query matches
             // document.body.style.backgroundColor = "yellow";
-    
-            nav.style.boxShadow = "";
 
-            nombre.style.fontSize = "3.5em";
-            nombre.style.transitionDuration = "1s";
+            
+            //nav.style.boxShadow = "0";
+
+  
+
+            navBar();
+            
         
-            profesion.style.fontSize = "2.5em";
-            profesion.style.transitionDuration = "1s";
-        
-            foto.style.height = "50%";
-            foto.style.width = "50%";
-            foto.style.transitionDuration = "1s";
-            //window.addEventListener("scroll", apareceScroll);
         } else { 
             // SI ES MAS GRANDE Q IPHONE
+            primero();
             window.addEventListener("scroll", scrollbBloqueImagen);
             window.addEventListener("scroll", scrollNavbar);
             window.addEventListener("scroll", apareceScroll);
+            
             //window.addEventListener("click", myPopUp);
             //alertaIconosHobbie();
         
@@ -59,6 +46,21 @@ var nav = document.getElementById("nav");
    
 }
 
+
+    // PARA TRANSICION AL GARGAR PAGINA AL INICIO
+
+    function primero (){
+
+        nombre.style.fontSize = "4em";
+        nombre.style.transitionDuration = "1s";
+    
+        profesion.style.fontSize = "2em";
+        profesion.style.transitionDuration = "1s";
+    
+        foto.style.height = "50%";
+        foto.style.width = "50%";
+        foto.style.transitionDuration = "1s"
+    }
 
 
  // SCROLL DE NAVBAR
@@ -150,7 +152,7 @@ function hobie (){
     
 }
 
-// PARA CLICK NAVBAR
+// PARA CLICK NAVBAR MOVIL
 function navBar(){
         
     var d = document.getElementById("menu_bar");
