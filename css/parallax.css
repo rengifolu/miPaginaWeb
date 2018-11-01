@@ -22,9 +22,10 @@
 @media screen and (max-width:414px){
     .parallax {
         opacity: 1;
-        background-image: url("../img/chorrillos.jpeg");
+        /*background-image: url("../img/chorrillos.jpeg");
         -o-background-size: cover;
-        background-size: cover;
+        background-size: cover; */
+        background-attachment:scroll
     }
 
 }
