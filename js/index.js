@@ -25,9 +25,8 @@ x.addListener(myFunction) // Attach listener function on state changes
 
             
             //nav.style.boxShadow = "0";
-
-  
-
+              
+            primeroResponsive();
             navBar();
             
         
@@ -60,6 +59,20 @@ x.addListener(myFunction) // Attach listener function on state changes
         foto.style.height = "50%";
         foto.style.width = "50%";
         foto.style.transitionDuration = "1s"
+    }
+
+    function primeroResponsive(){
+
+        nombre.style.fontSize = "3em";
+        nombre.style.transitionDuration = "1s";
+    
+        profesion.style.fontSize = "2em";
+        profesion.style.transitionDuration = "1s";
+    
+        foto.style.height = "100%";
+        foto.style.width = "100%";
+        foto.style.transitionDuration = "1s";
+
     }
 
 
