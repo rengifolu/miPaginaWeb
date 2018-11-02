@@ -147,22 +147,32 @@ function apareceScroll(){
 var estado = false;
 function hobie (){
         
-        var h = document.getElementById("popup");
-        var popup = document.getElementsByClassName("myPopup");
-        
-        h.addEventListener("click", function(){
-            if (estado === false) {
-                popup[0].style.display = "inline-block";
-                estado = !estado;
-                console.log("jiji")
-            } else {
-                popup[0].style.display = "none";
-                estado = !estado;
-                console.log("jojo")
-            } 
-        
-    });
-    
+        // var h = document.getElementById("popup");
+        // var popup = document.getElementsByClassName("myPopup");
+
+        var v = document.querySelectorAll("#popup");
+        // console.log(v);
+        var p = document.querySelectorAll(".myPopup");
+        // console.log(p);
+
+        v.forEach(function(userItem) {
+            // console.log(index);
+            userItem.addEventListener("click",function(){
+
+                p.forEach(function (params) {
+                    console.log(params);
+                    if (estado === false) {
+                        params.style.display = "inline-block";
+                        estado = !estado;
+                    }else{
+                        console.log(userItem);
+                        params.style.display = "none";
+                        estado = !estado;
+                    }
+                });
+                
+            });
+          });
 }
 
 // PARA CLICK NAVBAR MOVIL

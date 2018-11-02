@@ -125,7 +125,11 @@ nav > ul > li > ul {
 
 
 @media screen and (orientation: landscape){
-    nav{
-        box-shadow: "";
+    nav a {
+       
+       
+        padding: 0 2.5em;
+        transition: .4s;
+        font-size: 15px;
     }
 }
