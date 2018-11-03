@@ -151,6 +151,7 @@ function apareceScroll2(){
     var topVent = html.scrollTop;
     // console.log("topVent : "+topVent)
     for (i = 0; i < elementoAparece.length; i++) {
+        elementoAparece[i].style.minHeight = "800px";
         var topelemAparece = elementoAparece[i].offsetTop;
         if (topVent > 0) {
             elementoAparece[i].style.opacity = 1;
