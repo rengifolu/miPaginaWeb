@@ -153,10 +153,10 @@ function apareceScroll2(){
     for (i = 0; i < elementoAparece.length; i++) {
         var topelemAparece = elementoAparece[i].offsetTop;
         if (topVent > (topelemAparece - 200)) {
-            elementoAparece[i].style.opacity = 1;
+            elementoAparece[i].style.opacity = 0;
             elementoAparece[i].style.transitionDuration = "1.5s";                
         }else{
-            elementoAparece[i].style.opacity = 0;
+            elementoAparece[i].style.opacity = 1;
             elementoAparece[i].style.transitionDuration = "1.5s";
         } 
     }
