@@ -151,13 +151,14 @@ function apareceScroll2(){
     var topVent = html.scrollTop;
     // console.log("topVent : "+topVent)
     for (i = 0; i < elementoAparece.length; i++) {
+
         var topelemAparece = elementoAparece[i].offsetTop;
-        if (topVent > 0) {
+        if (topVent > (topelemAparece)) {
             elementoAparece[i].style.opacity = 1;
-            elementoAparece[i].style.transitionDuration = "1.5s";                
+            elementoAparece[i].style.transitionDuration = "1s";                
         }else{
             elementoAparece[i].style.opacity = 0;
-            elementoAparece[i].style.transitionDuration = "1.5s";
+            elementoAparece[i].style.transitionDuration = "1s";
         } 
     }
 }
