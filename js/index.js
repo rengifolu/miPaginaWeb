@@ -154,10 +154,10 @@ function apareceScroll2(){
         elementoAparece[i].style.minHeight = "800px";
         var topelemAparece = elementoAparece[i].offsetTop;
         if (topVent > 0) {
-            elementoAparece[i].style.opacity = 1;
+            elementoAparece[i].style.opacity = 0;
             elementoAparece[i].style.transitionDuration = "1.5s";                
         }else{
-            elementoAparece[i].style.opacity = 0;
+            elementoAparece[i].style.opacity = 1;
             elementoAparece[i].style.transitionDuration = "1.5s";
         } 
     }
