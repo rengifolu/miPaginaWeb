@@ -154,7 +154,6 @@ function apareceScroll2(){
         var topelemAparece = elementoAparece[i].offsetTop;
         if (topVent > (topelemAparece - 200)) {
             elementoAparece[i].style.opacity = 1;
-            elementoAparece[i].style.borderTop = "6px solid green";
             elementoAparece[i].style.transitionDuration = "1.5s";                
         }else{
             elementoAparece[i].style.opacity = 0;
