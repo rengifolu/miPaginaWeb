@@ -25,7 +25,7 @@ x.addListener(myFunction) // Attach listener function on state changes
 
             
             //nav.style.boxShadow = "0";
-            window.addEventListener("scroll", apareceScroll); 
+            window.addEventListener("scroll", apareceScroll2); 
             primeroResponsive();
             navBar();
             
@@ -142,49 +142,42 @@ function apareceScroll(){
     }
 }
 
+//SCROLL DE PARALLAX
+function apareceScroll2(){
+    var html = document.getElementsByTagName("html")[0];
+    // console.log(html)
+    var elementoAparece = document.getElementsByClassName("parallax");
+
+    var topVent = html.scrollTop;
+    // console.log("topVent : "+topVent)
+    for (i = 0; i < elementoAparece.length; i++) {
+        var topelemAparece = elementoAparece[i].offsetTop;
+        if (topVent > (topelemAparece - 200)) {
+            elementoAparece[i].style.opacity = 1;
+            elementoAparece[i].style.borderTop = "6px solid green";
+            elementoAparece[i].style.transitionDuration = "1.5s";                
+        }else{
+            elementoAparece[i].style.opacity = 0;
+            elementoAparece[i].style.transitionDuration = "1.5s";
+        } 
+    }
+}
+
 
 // PARA CLICK HOBIE
 var estado = false;
-function hobie (){
-        
-        // var h = document.getElementById("popup");
-        // var popup = document.getElementsByClassName("myPopup");
-
+function hobie (){  
         var v = document.querySelectorAll("#popup");
-          //console.log(v);
-        var p = document.querySelectorAll(".myPopup");
+          console.log(v);
+        var p = document.getElementsByClassName("myPopup");
          // console.log(p);
 
-        v.forEach(function(elem, index) {
-            // console.log(index);
-            elem.addEventListener("click",function(){
-
-                console.log(elem);
-                console.log(index);
-                p.forEach(function (element, indice) {
-
-                    if (index === indice) {
-                        if (!estado) {
-                            console.log(element);
-                            console.log(indice);
-                            element.style.display = "inline-block"; 
-                            estado = !estado; 
-                        } else {
-                            element.style.display = "inline-block"; 
-                            estado = !estado;
-                        }
-
-                    }
-                    // if (estado === false) {
-                    //     //params.style.display = "inline-block";
-                    //     estado = !estado;
-                    // }else{
-                    //     //console.log(userItem);
-                    //     //params.style.display = "none";
-                    //     estado = !estado;
-                    // }
-                });
-                
+        v.forEach(function(elem, index) {            
+            elem.addEventListener("mouseover",function(){
+                p[index].style.display = "inline-block";
+            });
+            elem.addEventListener("mouseout",function(){
+                p[index].style.display = "none";
             });
           });
 }
