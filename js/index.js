@@ -144,23 +144,50 @@ function apareceScroll(){
 
 //SCROLL DE PARALLAX
 function apareceScroll2(){
-    var html = document.getElementsByTagName("html")[0];
-    // console.log(html)
-    var elementoAparece = document.getElementsByClassName("parallax");
+    // var html = document.getElementsByTagName("html")[0];
+    // // console.log(html)
+    // var elementoAparece = document.getElementsByClassName("parallax");
 
-    var topVent = html.scrollTop;
-    // console.log("topVent : "+topVent)
-    for (i = 0; i < elementoAparece.length; i++) {
+    // var topVent = html.scrollTop;
+    // // console.log("topVent : "+topVent)
+    // for (i = 0; i < elementoAparece.length; i++) {
 
-        var topelemAparece = elementoAparece[i].offsetTop;
-        if (topVent > (topelemAparece)) {
-            elementoAparece[i].style.opacity = 1;
-            elementoAparece[i].style.transitionDuration = "1s";                
-        }else{
-            elementoAparece[i].style.opacity = 0;
-            elementoAparece[i].style.transitionDuration = "1s";
-        } 
-    }
+    //     var topelemAparece = elementoAparece[i].offsetTop;
+    //     if (topVent > (topelemAparece - 400)) {
+    //         console.log(topelemAparece);
+    //         elementoAparece[i].style.opacity = 1;
+    //         elementoAparece[i].style.transitionDuration = "1s";                
+    //     }else{
+    //         elementoAparece[i].style.opacity = 0;
+    //         elementoAparece[i].style.transitionDuration = "1s";
+    //     } 
+    // }
+
+
+    var yPos = window.pageYOffset;
+    var parallax = document.getElementsByClassName("parallax");
+    //console.log(parallax[0]);
+    //console.log(parallax[0].scrollTop);
+ 
+        //console.log(parallax[i].offsetTop);
+        if (yPos  > 800 & yPos < 1400) {
+            parallax[0].style.opacity = 1;
+            parallax[0].style.transitionDuration = "1s";
+        } else {
+            parallax[0].style.opacity = 0;
+            parallax[0].style.transitionDuration = "1s";
+        }
+        
+        if (yPos > 2800 & yPos < 3400) {
+            parallax[1].style.opacity = 1;
+            parallax[1].style.transitionDuration = "1s";
+        }else {
+            parallax[1].style.opacity = 0;
+            parallax[1].style.transitionDuration = "1s";
+        }
+    
+    
+
 }
 
 
