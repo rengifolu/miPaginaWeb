@@ -25,7 +25,7 @@ x.addListener(myFunction) // Attach listener function on state changes
 
             
             //nav.style.boxShadow = "0";
-            //window.addEventListener("scroll", apareceScroll2); 
+            window.addEventListener("scroll", apareceScroll2); 
             primeroResponsive();
             navBar();
             
