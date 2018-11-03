@@ -20,27 +20,14 @@
 
 /* RESPONSIVE A 375PX  iphone x*/
 @media screen and (max-width:414px){
-    /* .parallax {
-        opacity: 1;
+     /* .parallax {
+        opacity: 0;
         /* background-image: url("../img/chorrillos.jpeg");
         -o-background-size: cover;
-        background-size: cover;*/
+        background-size: cover;
         background-attachment:scroll;
-    } */
+    }  */
 
-    .parallax {
-        opacity: 0;
-        /* The image used */
-        background-image: url("../img/colonia.jpg");
-    
-        /* Set a specific height */
-        min-height: 1000px; 
-    
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment:scroll;
-    }
 
+    
 }

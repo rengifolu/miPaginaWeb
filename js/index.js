@@ -165,12 +165,13 @@ function apareceScroll2(){
 
 
     var yPos = window.pageYOffset;
+    console.log(yPos);
     var parallax = document.getElementsByClassName("parallax");
     //console.log(parallax[0]);
     //console.log(parallax[0].scrollTop);
  
-        //console.log(parallax[i].offsetTop);
-        if (yPos  > 800 & yPos < 1400) {
+        
+        if (yPos  > 400 & yPos < 1400) {
             parallax[0].style.opacity = 1;
             parallax[0].style.transitionDuration = "1s";
         } else {
@@ -178,7 +179,7 @@ function apareceScroll2(){
             parallax[0].style.transitionDuration = "1s";
         }
         
-        if (yPos > 2800 & yPos < 3400) {
+        if (yPos > 2700 & yPos < 4090) {
             parallax[1].style.opacity = 1;
             parallax[1].style.transitionDuration = "1s";
         }else {
