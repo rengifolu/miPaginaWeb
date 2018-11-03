@@ -25,7 +25,7 @@ x.addListener(myFunction) // Attach listener function on state changes
 
             
             //nav.style.boxShadow = "0";
-              
+            window.addEventListener("scroll", apareceScroll); 
             primeroResponsive();
             navBar();
             
@@ -151,24 +151,38 @@ function hobie (){
         // var popup = document.getElementsByClassName("myPopup");
 
         var v = document.querySelectorAll("#popup");
-        // console.log(v);
+          //console.log(v);
         var p = document.querySelectorAll(".myPopup");
-        // console.log(p);
+         // console.log(p);
 
-        v.forEach(function(userItem) {
+        v.forEach(function(elem, index) {
             // console.log(index);
-            userItem.addEventListener("click",function(){
+            elem.addEventListener("click",function(){
 
-                p.forEach(function (params) {
-                    console.log(params);
-                    if (estado === false) {
-                        params.style.display = "inline-block";
-                        estado = !estado;
-                    }else{
-                        console.log(userItem);
-                        params.style.display = "none";
-                        estado = !estado;
+                console.log(elem);
+                console.log(index);
+                p.forEach(function (element, indice) {
+
+                    if (index === indice) {
+                        if (!estado) {
+                            console.log(element);
+                            console.log(indice);
+                            element.style.display = "inline-block"; 
+                            estado = !estado; 
+                        } else {
+                            element.style.display = "inline-block"; 
+                            estado = !estado;
+                        }
+
                     }
+                    // if (estado === false) {
+                    //     //params.style.display = "inline-block";
+                    //     estado = !estado;
+                    // }else{
+                    //     //console.log(userItem);
+                    //     //params.style.display = "none";
+                    //     estado = !estado;
+                    // }
                 });
                 
             });
