@@ -8,10 +8,12 @@ $mensaje = $_POST['mensaje'];
 
 if (mail('andrelujan7@gmail.com', $nombre,$mensaje)) {
     # code...
-    echo "alert('ok')";
+    // echo "alert('ok')";
+    echo '<script type="text/javascript" alert("ok")></script>';
 } else {
     # code...
-    echo "alert('no ok')";
+    // echo "alert('no ok')";
+    echo '<script type="text/javascript" alert("no ok")></script>';
 }
 
 
