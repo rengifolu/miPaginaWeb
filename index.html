@@ -141,15 +141,15 @@
     <!-- FOOTER -->
     <a name="contacto"></a>
     
-    <footer action="mailto:andrelujan7@gmail.com" method="POST">
+    <footer>
         <h1>Contact</h1>
         <!-- <a href="https://github.com/rengifolu">Diego Lujan</a> -->
-        <form>
-            <input type="text" placeholder="Name">
+        <form action="index.php" method="POST">
+            <input type="text" name="nombre" placeholder="Name">
             <br>
-            <input type="email" placeholder="Email">
+            <input type="email" name="email" placeholder="Email">
             <br>
-            <textarea type="textarea" placeholder="Message"></textarea>
+            <textarea type="textarea" name="mensaje" placeholder="Message"></textarea>
             <br>
             <input type="submit" value="Send">
         </form>

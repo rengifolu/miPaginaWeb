@@ -20,23 +20,15 @@
 
 /* RESPONSIVE A 375PX  iphone x*/
 @media screen and (max-width:414px){
-     /*.parallax {
-        opacity: 0;
-        -o-background-size: cover;
-        background-size: cover;
-        background-attachment: fixed !important;
-        background-position: center top !important;
-    }   */
-
-     .parallax { 
-        background:url(../img/colonia.jpg) no-repeat center center;
-        background-size:cover;
-        min-height: 1000px;
-        position:fixed;
-        width:100%;
-        z-index:-2;
-        top:0;
-        
+     .parallax {
+        background-attachment: scroll;  
     } 
     
 }
+
+
+@media screen and (orientation: landscape){
+    .parallax {
+        background-attachment: scroll;  
+    } 
+}    

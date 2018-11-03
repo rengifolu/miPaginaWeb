@@ -180,7 +180,7 @@ function apareceScroll2(){
             parallax[0].style.transitionDuration = "1s";
         }
         
-        if (yPos > 2700 & yPos < 4090) {
+        if (yPos > 2700 & yPos < 5090) {
             parallax[1].style.opacity = 1;
             parallax[1].style.transitionDuration = "1s";
         }else {

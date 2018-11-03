@@ -72,7 +72,7 @@ header,footer{
     background-image: url("../img/estudios.jpg");
     list-style-type: none; 
     width: 100%;
-    height: 1000px;
+    height: 800px;
     background-size: contain;
 }
 
@@ -133,22 +133,23 @@ header,footer{
     border: 20px solid rgba(0,0,0,0.5);
     padding: 10px 10px;
     display: inline;
-    color: rgb(31, 240, 48);
+    color: rgb(22, 207, 37);
     cursor: pointer;
 }
 
 .myPopup{
     display: none;
     border-radius: 15px;
-    background: #bed8bb;
+    background: #29dd15;
     opacity: 0.9;
     padding: 10px;
     position: absolute;
-    font-size: 0.7em;
+    font-size: 1em;
     -webkit-animation-name: cambiarColor;
     animation-name: cambiarColor;
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
+    color: black;
 }
 
 
