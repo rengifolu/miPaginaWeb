@@ -174,6 +174,7 @@ function apareceScroll2(){
         if (yPos  > 400 & yPos < 1400) {
             parallax[0].style.opacity = 1;
             parallax[0].style.transitionDuration = "1s";
+
         } else {
             parallax[0].style.opacity = 0;
             parallax[0].style.transitionDuration = "1s";
