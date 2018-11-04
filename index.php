@@ -9,15 +9,12 @@ $mensaje = $_POST['mensaje'];
 if (mail('andrelujan7@gmail.com', $nombre,$mensaje)) {
     # code...
     // echo "alert('ok')";
-    echo '<script type="text/javascript">
-    alert("ok");
-    window.location.href="index.php";;
-    </script>';
+    //echo '<script type="text/javascript"> alert("ok"); window.location.href="index.php";</script>';
     
 } else {
     # code...
     // echo "alert('no ok')";
-    echo '<script type="text/javascript">alert("no ok")</script>';
+    //echo '<script type="text/javascript">alert("no ok")</script>';
 }
 
 
