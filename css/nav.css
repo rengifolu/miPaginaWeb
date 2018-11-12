@@ -124,10 +124,10 @@ nav > ul > li > ul {
 
 
 
-@media screen and (orientation: landscape){
+/* @media screen and (orientation: landscape){
     nav a {
         padding: 0 2.5em;
         transition: .4s;
         font-size: 13px;
     }
-}
+} */

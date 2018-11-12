@@ -36,9 +36,7 @@ x.addListener(myFunction) // Attach listener function on state changes
             window.addEventListener("scroll", scrollbBloqueImagen);
             window.addEventListener("scroll", scrollNavbar);
             window.addEventListener("scroll", apareceScroll);
-            
-            //window.addEventListener("click", myPopUp);
-            //alertaIconosHobbie();
+             // desciendeLetrasParallax();
         
         }
     }
@@ -235,5 +233,23 @@ function navBar(){
     });
 }
 
+
+// function desciendeLetrasParallax (){
+
+//     var letras = document.getElementsByClassName("parallax > h1");
+//     console.log(letras)
+//     for (i = 0; i < letras.length; i++) {
+
+//     }
+
+
+//     var letr = document.getElementById(id="parallax");
+//     console.log(letr);
+//     letr.style.margintop = "300px";
+//     letr.style.opacity = 1;
+    
+//     letr.style.transitionDuration = "1s";
+        
+// }
 
 

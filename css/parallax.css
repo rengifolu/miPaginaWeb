@@ -14,8 +14,12 @@
 }
 
 .parallax > h1 {
-    padding-top: 350px;
-    font-size: 4em
+    border: 1px solid;
+    height: 230px;;
+    margin-top: 300px;
+    font-size: 4em;
+    opacity: 1;
+    
 }
 
 /* RESPONSIVE A 375PX  iphone x*/
