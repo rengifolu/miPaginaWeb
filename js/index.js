@@ -3,10 +3,12 @@ var contador = 1;
 var nombre = null;
 var profesion = null;
 var foto = null;
+var letras = null;
 window.onload = function inic (){
     nombre = document.getElementById("nombre");
     profesion = document.getElementById("profesion");
     foto = document.getElementById("imagen");
+    letras = document.getElementsByClassName("tituloparallax");
 
     
     hobie ();
@@ -36,7 +38,6 @@ x.addListener(myFunction) // Attach listener function on state changes
             window.addEventListener("scroll", scrollbBloqueImagen);
             window.addEventListener("scroll", scrollNavbar);
             window.addEventListener("scroll", apareceScroll);
-             // desciendeLetrasParallax();
         
         }
     }
@@ -132,58 +133,43 @@ function apareceScroll(){
         if (topVent > (topelemAparece - 700)) {
             elementoAparece[i].style.opacity = 1;
             elementoAparece[i].style.borderTop = "6px solid green";
-            elementoAparece[i].style.transitionDuration = "1.5s";                
+            elementoAparece[i].style.transitionDuration = "1.5s";  
+                      
         }else{
             elementoAparece[i].style.opacity = 0;
             elementoAparece[i].style.transitionDuration = "1.5s";
+            
         } 
     }
 }
 
 //SCROLL DE PARALLAX
 function apareceScroll2(){
-    // var html = document.getElementsByTagName("html")[0];
-    // // console.log(html)
-    // var elementoAparece = document.getElementsByClassName("parallax");
-
-    // var topVent = html.scrollTop;
-    // // console.log("topVent : "+topVent)
-    // for (i = 0; i < elementoAparece.length; i++) {
-
-    //     var topelemAparece = elementoAparece[i].offsetTop;
-    //     if (topVent > (topelemAparece - 400)) {
-    //         console.log(topelemAparece);
-    //         elementoAparece[i].style.opacity = 1;
-    //         elementoAparece[i].style.transitionDuration = "1s";                
-    //     }else{
-    //         elementoAparece[i].style.opacity = 0;
-    //         elementoAparece[i].style.transitionDuration = "1s";
-    //     } 
-    // }
 
 
     var yPos = window.pageYOffset;
     console.log(yPos);
     var parallax = document.getElementsByClassName("parallax");
-    //console.log(parallax[0]);
-    //console.log(parallax[0].scrollTop);
- 
+
         
         if (yPos  > 400 & yPos < 1400) {
             parallax[0].style.opacity = 1;
             parallax[0].style.transitionDuration = "1s";
-
+            desciendeLetrasParallax();
         } else {
             parallax[0].style.opacity = 0;
             parallax[0].style.transitionDuration = "1s";
+        
         }
         
         if (yPos > 2700 & yPos < 5090) {
             parallax[1].style.opacity = 1;
             parallax[1].style.transitionDuration = "1s";
+            desciendeLetrasParallax();
         }else {
             parallax[1].style.opacity = 0;
             parallax[1].style.transitionDuration = "1s";
+            
         }
     
     
@@ -234,22 +220,24 @@ function navBar(){
 }
 
 
-// function desciendeLetrasParallax (){
+function desciendeLetrasParallax (){
 
-//     var letras = document.getElementsByClassName("parallax > h1");
-//     console.log(letras)
-//     for (i = 0; i < letras.length; i++) {
-
-//     }
-
-
-//     var letr = document.getElementById(id="parallax");
-//     console.log(letr);
-//     letr.style.margintop = "300px";
-//     letr.style.opacity = 1;
     
-//     letr.style.transitionDuration = "1s";
-        
-// }
+    console.log(letras)
+    letras[0].style.marginTop = "300px";
+    letras[0].style.opacity = 1;
+    letras[0].style.transitionDuration = "5s";
+      
+}
+
+function ocultaLetrasParallax (){
+
+    
+    console.log(letras)
+    letras[0].style.marginTop = "-300px";
+    letras[0].style.opacity = 0;
+    letras[0].style.transitionDuration = "5s";
+      
+}
 
 
