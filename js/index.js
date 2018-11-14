@@ -155,17 +155,17 @@ function apareceScroll2(){
         if (yPos  > 400 & yPos < 1400) {
             parallax[0].style.opacity = 1;
             parallax[0].style.transitionDuration = "1s";
-            desciendeLetrasParallax();
+           // desciendeLetrasParallax();
         } else {
             parallax[0].style.opacity = 0;
             parallax[0].style.transitionDuration = "1s";
         
         }
         
-        if (yPos > 2700 & yPos < 5090) {
+        if (yPos > 2700 & yPos < 4090) {
             parallax[1].style.opacity = 1;
             parallax[1].style.transitionDuration = "1s";
-            desciendeLetrasParallax();
+           // desciendeLetrasParallax();
         }else {
             parallax[1].style.opacity = 0;
             parallax[1].style.transitionDuration = "1s";

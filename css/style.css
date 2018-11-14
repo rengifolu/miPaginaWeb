@@ -214,24 +214,18 @@ input[type=submit]{
 
     .primero{
         height: 800px;
-    }
-
-      
+    } 
     .titulo{
         width: 100%;
         padding-top: 30%;
     }
-
     .titulo > h1{
         font-size: 2em;
     }
-
     .titulo > h2{
         font-size: 1em;
         /* font-size: 70px; */
-    
     }
-
 
     .imagen{
         width: 90%;
