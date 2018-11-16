@@ -132,7 +132,6 @@ function apareceScroll(){
         var topelemAparece = elementoAparece[i].offsetTop;
         if (topVent > (topelemAparece - 700)) {
             elementoAparece[i].style.opacity = 1;
-            elementoAparece[i].style.borderTop = "6px solid green";
             elementoAparece[i].style.transitionDuration = "1.5s";  
                       
         }else{
@@ -143,7 +142,7 @@ function apareceScroll(){
     }
 }
 
-//SCROLL DE PARALLAX
+//SCROLL DE PARALLAX DE MOVIL
 function apareceScroll2(){
 
 
@@ -155,7 +154,7 @@ function apareceScroll2(){
         if (yPos  > 400 & yPos < 1400) {
             parallax[0].style.opacity = 1;
             parallax[0].style.transitionDuration = "1s";
-           // desciendeLetrasParallax();
+           
         } else {
             parallax[0].style.opacity = 0;
             parallax[0].style.transitionDuration = "1s";
@@ -165,7 +164,7 @@ function apareceScroll2(){
         if (yPos > 2700 & yPos < 4090) {
             parallax[1].style.opacity = 1;
             parallax[1].style.transitionDuration = "1s";
-           // desciendeLetrasParallax();
+           
         }else {
             parallax[1].style.opacity = 0;
             parallax[1].style.transitionDuration = "1s";
