@@ -284,7 +284,12 @@ input[type=submit]{
         padding-top: 50px;
     }
 
-
+    .parallax p{
+        padding-top: 60px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
     footer{
         height: 150px;
     }
