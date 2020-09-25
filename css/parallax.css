@@ -1,40 +1,38 @@
 .parallax {
-    opacity: 0;
-    /* The image used */
-    background-image: url("../img/colonia.jpg");
+  opacity: 0;
+  /* The image used */
+  background-image: url("../img/colonia.jpg");
 
-    /* Set a specific height */
-    min-height: 1000px; 
+  /* Set a specific height */
+  min-height: 1000px;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .parallax > h1 {
-    height: 230px;;
-    margin-top: 0px;
-    font-size: 4em;
-    padding-top: 200px;
+  height: 230px;
+  margin-top: 0px;
+  font-size: 4em;
+  padding-top: 200px;
 }
 
 /* RESPONSIVE A 375PX  iphone x*/
-@media screen and (max-width:414px){
-     .parallax {
-        background-attachment: scroll;  
-    } 
+@media screen and (max-width: 414px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 
-    .parallax > h1 {
-        margin-top: 0;
-    }
-    
+  .parallax > h1 {
+    margin-top: 0;
+  }
 }
 
-
-@media screen and (orientation: landscape){
-    .parallax {
-        background-attachment: scroll;  
-    } 
-}    
+@media screen and (orientation: landscape) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}

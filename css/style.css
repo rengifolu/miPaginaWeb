@@ -1,56 +1,50 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    /* background-image: url("../img/amsterdam.jpg"); */
-    color: #fff;
-    text-align: center;
-    background-color: rgb(22, 21, 21);
-
+  /* background-image: url("../img/amsterdam.jpg"); */
+  color: #fff;
+  text-align: center;
+  background-color: rgb(22, 21, 21);
 }
 
-header,footer{
-    width: 100%;
+header,
+footer {
+  width: 100%;
 }
-
-
-
 
 /* APARTADO PRIMER DIV */
-.primero{
-    /* list-style-type: none; */
-    width: 100%;
-    height: 1000px;
+.primero {
+  /* list-style-type: none; */
+  width: 100%;
+  height: 1000px;
 }
 
-.titulo{
-    width: 50%;
-    float: left;
-    color: #5c2e8a;
-    padding-top: 350px;
+.titulo {
+  width: 50%;
+  float: left;
+  color: #5c2e8a;
+  padding-top: 350px;
 }
 
-.titulo > h1{
-    font-size: 3em;
-    /* font-size: 100px; */
+.titulo > h1 {
+  font-size: 3em;
+  /* font-size: 100px; */
 }
-.titulo > h2{
-    font-size: 1.5em;
-    /* font-size: 70px; */
-
+.titulo > h2 {
+  font-size: 1.5em;
+  /* font-size: 70px; */
 }
 
-.imagen{
-    
-    padding-top: 300px;
-    width: 40%;
-    height: 40%;;
-    float: left;
-    -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
-    transition: width 2s, height 4s;
-    
+.imagen {
+  padding-top: 300px;
+  width: 40%;
+  height: 40%;
+  float: left;
+  -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 4s;
 }
 /* SUSTITUIDO CON JAVASCRIPT */
 /* .imagen:hover {
@@ -59,240 +53,229 @@ header,footer{
 } */
 
 .imagen > img {
-    transform: rotate(-10deg) skew(-10deg);  /* GIRA IMAGEN */
-    width: 50%;
-    opacity: 0.5;
-    border-radius: 8px;
-    box-shadow: -15px -15px 45px 5px rgb(31, 240, 48);
+  transform: rotate(-10deg) skew(-10deg); /* GIRA IMAGEN */
+  width: 50%;
+  opacity: 0.5;
+  border-radius: 8px;
+  box-shadow: -15px -15px 45px 5px rgb(31, 240, 48);
 }
-
 
 /* APARTADO ESTUDIOS */
-.estudios{
-    background-image: url("../img/estudios.jpg");
-    list-style-type: none; 
-    width: 100%;
-    height: 800px;
-    background-size: contain;
+.estudios {
+  background-image: url("../img/estudios.jpg");
+  list-style-type: none;
+  width: 100%;
+  height: 800px;
+  background-size: contain;
 }
 
-.estudios > h1{
-    padding-top: 250px;
-    font-size: 4em;
+.estudios > h1 {
+  padding-top: 250px;
+  font-size: 4em;
 }
 
 .estudios > ul > li {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 /* ACTUALIDAD */
-.actualidad{
-    background-image: url("../img/colonia.jpg");
-    background-size: cover; /* Resize the background image to cover the entire container */;
-    list-style-type: none; 
-    width: 100%;
-    height: 1000px;
-    background-color: rgb(146, 146, 43);
+.actualidad {
+  background-image: url("../img/colonia.jpg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+  list-style-type: none;
+  width: 100%;
+  height: 1000px;
+  background-color: rgb(146, 146, 43);
 }
 
-.actualidad > h1{
-    /* padding-top: 00px; */
-    font-size: 4em;
+.actualidad > h1 {
+  /* padding-top: 00px; */
+  font-size: 4em;
 }
 
-.parallax p{
-    font-size: 2em;
-    text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;
+.parallax p {
+  font-size: 2em;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 /* SERVICIOS */
-.servicios{
-    background-image: url("../img/chorrillos.jpg");
-    background-size: cover; /* Resize the background image to cover the entire container */;
-    list-style-type: none; 
-    width: 100%;
-    height: 1000px;
-    background-color: rgb(80, 123, 187);
+.servicios {
+  background-image: url("../img/chorrillos.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+  list-style-type: none;
+  width: 100%;
+  height: 1000px;
+  background-color: rgb(80, 123, 187);
 }
 
-.servicios > h1{
-    padding-top: 300px;
-    font-size: 4em;
+.servicios > h1 {
+  padding-top: 300px;
+  font-size: 4em;
 }
 
-
-.servicios p{
-    font-size: 2em;
-    text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;
+.servicios p {
+  font-size: 2em;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
-
-.parallax ul{
-    padding-top: 50px ;
-
+.parallax ul {
+  padding-top: 50px;
 }
 
-.parallax ul li{
-    border: 20px solid rgba(0,0,0,0.5);
-    padding: 10px 10px;
-    display: inline;
-    color: rgb(22, 207, 37);
-    cursor: pointer;
+.parallax ul li {
+  border: 20px solid rgba(0, 0, 0, 0.5);
+  padding: 10px 10px;
+  display: inline;
+  color: rgb(22, 207, 37);
+  cursor: pointer;
 }
 
-.myPopup{
-    display: none;
-    border-radius: 15px;
-    background: #29dd15;
-    opacity: 0.9;
-    padding: 10px;
-    position: absolute;
-    font-size: 1em;
-    -webkit-animation-name: cambiarColor;
-    animation-name: cambiarColor;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    color: black;
+.myPopup {
+  display: none;
+  border-radius: 15px;
+  background: #29dd15;
+  opacity: 0.9;
+  padding: 10px;
+  position: absolute;
+  font-size: 1em;
+  -webkit-animation-name: cambiarColor;
+  animation-name: cambiarColor;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  color: black;
 }
-
-
 
 @-webkit-keyframes cambiarColor {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
   }
-  
-  @keyframes cambiarColor {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;;
-    }
+  100% {
+    opacity: 1;
   }
-
-footer{
-    /* clear: both; limpia los float sgts*/
-    height: 150px;
 }
 
+@keyframes cambiarColor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-.email{
-    margin-top: 2%;
-    height: 100px;
+footer {
+  /* clear: both; limpia los float sgts*/
+  height: 150px;
+}
+
+.email {
+  margin-top: 2%;
+  height: 100px;
+  font-size: 3em;
+  /* border: solid #29dd15 1px; */
+}
+.email > a {
+  color: #cfdace;
+}
+
+.email > a:hover /* Cuando el visitante hace clic en el enlace */ {
+  color: rgb(31, 240, 205);
+}
+.email > a:active /* Cuando el visitante hace clic en el enlace */ {
+  color: rgb(31, 240, 48);
+}
+
+input[type="text"],
+input[type="email"],
+textarea[type="textarea"] {
+  background-color: rgb(22, 21, 21);
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(31, 240, 48);
+  color: #fff;
+}
+input[type="submit"] {
+  background-color: rgb(31, 240, 48);
+  width: 50%;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 414px) {
+  .primero {
+    height: 800px;
+  }
+  .titulo {
+    width: 100%;
+    padding-top: 30%;
+  }
+  .titulo > h1 {
+    font-size: 2em;
+  }
+  .titulo > h2 {
+    font-size: 1em;
+    /* font-size: 70px; */
+  }
+
+  .imagen {
+    width: 90%;
+    height: 90;
+    padding-top: 30%;
+  }
+
+  .parallax {
+    height: 600px;
+  }
+
+  .parallax ul li {
+    display: block;
+  }
+
+  .estudios {
+    height: 800px;
+  }
+
+  .estudios > h1 {
+    padding-top: 50px;
+    font-size: 3.5em;
+  }
+
+  .servicios {
+    height: 800px;
+  }
+
+  .servicios > h1 {
     font-size: 3em;
-    /* border: solid #29dd15 1px; */
+    padding-top: 50px;
+  }
+
+  .servicios p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .parallax > h1 {
+    padding-top: 50px;
+  }
+
+  .parallax p {
+    padding-top: 60px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  footer {
+    height: 150px;
+  }
 }
-.email > a{
-    color: #cfdace;
-}
-
-.email > a:hover /* Cuando el visitante hace clic en el enlace */
-{
-    Color: rgb(31, 240, 205);
-}
-.email > a:active /* Cuando el visitante hace clic en el enlace */
-{
-    Color: rgb(31, 240, 48);
-}
-
-input[type=text],input[type=email] ,textarea[type=textarea]{
-    background-color: rgb(22, 21, 21);
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px solid rgb(31, 240, 48);
-    color: #fff;
-}
-input[type=submit]{
-    background-color:rgb(31, 240, 48);
-    width: 50%;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-
-@media screen and (max-width:414px){
-
-    .primero{
-        height: 800px;
-    } 
-    .titulo{
-        width: 100%;
-        padding-top: 30%;
-    }
-    .titulo > h1{
-        font-size: 2em;
-    }
-    .titulo > h2{
-        font-size: 1em;
-        /* font-size: 70px; */
-    }
-
-    .imagen{
-        width: 90%;
-        height: 90;
-        padding-top: 30%;
-    }
-    
-    .parallax{
-        height: 600px;
-    }
-
-    .parallax ul li {
-        display: block;
-    }
-
-    .estudios{
-        height: 800px;  
-    }
- 
-    .estudios > h1{
-        padding-top: 50px;
-        font-size: 3.5em;
-    }
-
-    .servicios{
-        height: 800px;
-    }
-
-    .servicios > h1{
-        font-size: 3em;
-        padding-top: 50px;
-    }
-
-    .servicios p{
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .parallax > h1{
-        padding-top: 50px;
-    }
-
-    .parallax p{
-        padding-top: 60px;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    
-    footer{
-        height: 150px;
-    }
-
-} 
-
